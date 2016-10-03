@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Meu Canal</title>
+
+<link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+<link href="css/extras.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+</head>
+
+<body>
+    <div id="mMenu" class="black-blue">
+    	<div class="container right-align">
+        	<a href="index.html">
+        		<img src="img/marttv-logo3.png" class="responsive-img" />
+            </a>
+            <ul class="hide-on-med-and-down">
+                <li>
+                    <a href="index.html" class="high-pink-text upper">
+                        <em>Início</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mDestaques" class="high-pink-text upper scrollto">
+                        <em>Palestrantes</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mVantagens" class="high-pink-text upper scrollto">
+                        <em>Vantagens</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mRecursos" class="high-pink-text upper scrollto">
+                        <em>Recursos</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mPlanos" class="high-pink-text upper scrollto">
+                        <em>Planos</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="mContato" class="high-pink-text upper">
+                        <em>Contato</em>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only" style="padding-right:12px;">
+            	<i class="mdi-navigation-menu small cyan-text text-accent-2"></i>
+            </a>
+            <ul id="slide-out" class="side-nav">
+            	<li>
+                    <a href="index.html" class="dark-blue-text upper">
+                        <i class="mdi-action-home left"></i> Início
+                    </a>
+                </li>
+                <li>
+                    <a href="#mDestaques" class="dark-blue-text upper scrollto">
+                        <i class="mdi-action-info left"></i> Palestrantes
+                    </a>
+                </li>
+                <li>
+                    <a href="#mVantagens" class="dark-blue-text upper scrollto">
+                        <i class="mdi-action-trending-up left"></i> Vantagens
+                    </a>
+                </li>
+                <li>
+                    <a href="#mRecursos" class="dark-blue-text upper scrollto">
+                        <i class="mdi-action-settings left"></i> Recursos
+                    </a>
+                </li>
+                <li>
+                    <a href="#mPlanos" class="dark-blue-text upper scrollto">
+                        <i class="mdi-editor-attach-money left"></i> Planos
+                    </a>
+                </li>
+            	<li>
+                    <a href="#mContato" class="dark-blue-text upper scrollto">
+                        <i class="mdi-content-mail left"></i> Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="mVenda" class="blue-grey lighten-5">
+        <div class="container">
+            <div class="row nm">
+                <div class="col l9">
+                    <div class="etapas black-blue z-depth-1">
+                        <div class="indicator high-pink" style="width:66.666%;"></div>
+                        <ul class="nm">
+                            <li>
+                                <span class="active">1</span>
+                                <em class="upper">Dados Pessoais</em>
+                            </li>
+                            <li>
+                                <span class="active">2</span>
+                                <em class="upper">Pagamento</em>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <em class="upper">Confirmação</em>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="row nm">
+                        <div class="col s12 np">
+                            <ul class="tabs transparent" style="margin:20px 0px;">
+                                <li class="tab col s4">
+                                    <a class="active" href="#t1"><em>Cartão de Crédito</em></a>
+                                </li>
+                                <li class="tab col s4">
+                                    <a href="#t2"><em>Débito Online</em></a>
+                                </li>
+                                <li class="tab col s4">
+                                    <a href="#t3"><em>Boleto Bancário</em></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="t1" class="col s12 np">
+                            <div class="col l6 np">
+                                <form class="row" id="form_getCard" method="post">
+                                    <div class="input-field col s12">
+                                        <label for="number_cartao">
+                                            <em class="upper high-pink-text">Numero do Cartão</em>
+                                        </label>
+                                        <input placeholder="Numero do cartão" data-iugu="number" id="number_cartao" maxlength="16" type="text" class="validate white" required/>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <label for="nome_cartao">
+                                            <em class="upper high-pink-text">Nome do Dono do Cartão</em>
+                                        </label>
+                                        <input placeholder="Nome do dono do cartão" data-iugu="full_name" id="nome_cartao" type="text" class="validate white" required/>
+                                    </div>
+                                    <div class="center-align">
+                                        <span style="font-size:12px;">
+                                            <em class="upper high-pink-text">Validade do Cartão</em>
+                                        </span>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <select class="browser-default" id="mesValidade" required>
+                                            <option value="0" disabled selected>Mês</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <select class="browser-default" id="anoValidade" required>
+                                            <option value="0" disabled selected>Ano</option>
+                                            <option value="16">2016</option>
+                                            <option value="17">2017</option>
+                                            <option value="18">2018</option>
+                                            <option value="19">2019</option>
+                                            <option value="20">2020</option>
+                                            <option value="21">2021</option>                                                                
+                                            <option value="22">2022</option>                                                                
+                                            <option value="23">2023</option>                                                                
+                                            <option value="24">2024</option>                                                                
+                                            <option value="25">2025</option>                                                                
+                                            <option value="26">2026</option>                                                                
+                                            <option value="27">2027</option>                                                                
+                                            <option value="28">2028</option>                                                                
+                                            <option value="29">2029</option>                                                                
+                                            <option value="30">2030</option>                                                                
+                                            <option value="31">2031</option>                                                                
+                                            <option value="32">2032</option>                                                                
+                                            <option value="33">2033</option>                                                                
+                                            <option value="34">2034</option>                                                                
+                                            <option value="35">2035</option>                                                                
+                                            <option value="36">2036</option>                                                                
+                                        </select>
+                                    </div>
+                                    <input type="hidden" id="expiracaoHidde" data-iugu="expiration" value=""/>
+                                    <div class="input-field col s6">
+                                        <input id="cvv" placeholder="Codigo de Segurança" type="text" class="validate white nm" maxlength="3" data-iugu="verification_value" required/>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <select class="browser-default" id="parcelas" required>
+                                            <option value="0" disabled selected>Nº de parcelas</option>
+                                        </select>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="cartao center-align">
+                                        <span>
+                                            <em class="upper high-pink-text">O cartão utilizado nesta compra lhe pertence ?:</em>
+                                        </span>
+                                        <a class="btn active" data-cartao="0"><em>Sim</em></a>
+                                        <a class="btn" data-cartao="1"><em>Não</em></a>
+                                    </div>
+                                    <div class="extras">
+                                        <div class="input-field col s12">
+                                            <label for="number_cartao">
+                                                <em class="upper high-pink-text">CPF do Titular</em>
+                                            </label>
+                                            <input placeholder="Numero do CPF" data-iugu="number" id="number_cartao" maxlength="16" type="text" class="validate white" required/>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <label for="nome_cartao">
+                                                <em class="upper high-pink-text">Data de Nascimento do Titular</em>
+                                            </label>
+                                            <input placeholder="__/__/__" data-iugu="full_name" id="nome_cartao" type="text" class="validate white" required/>
+                                        </div>
+                                    </div>
+                                    <div class="col l12 center-align" style="padding: 15px 0;">
+                                        <button class="btn btn-large black-blue high-blue-text waves-effect waves-light btnCardCreditBuy">
+                                            <em>Realizar Pagamento</em>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="t2" class="col s12">
+                            <div class="bancos">
+                                <ul class="nm">
+                                    <li>
+                                        <img src="img/banco1.jpg" class="responsive-img">
+                                        <h6 class="center-align"><em>Banco Bradesco</em></h6>
+                                    </li>
+                                    <li>
+                                        <img src="img/banco2.jpg" class="responsive-img">
+                                        <h6 class="center-align"><em>Banco do Brasil</em></h6>
+                                    </li>
+                                    <li>
+                                        <img src="img/banco3.jpg" class="responsive-img">
+                                        <h6 class="center-align"><em>Banco Banrisul</em></h6>
+                                    </li>
+                                    <li>
+                                        <img src="img/banco5.jpg" class="responsive-img">
+                                        <h6 class="center-align"><em>Banco Itau</em></h6>
+                                    </li>
+                                    <li>
+                                        <img src="img/banco4.jpg" class="responsive-img">
+                                        <h6 class="center-align"><em>Banco HSBC</em></h6>
+                                    </li>
+                                </ul>
+                                <div class="center-align">
+                                    <p class="light">*Após clicar em <b>"Realizar pagamento"</b> você receberá acesso ao link que o levará ao site do seu banco, assim é possível realizar o pagamento em total segurança.</p>
+                                    <button class="btn btn-large black-blue high-blue-text waves-effect waves-light btnCardCreditBuy">
+                                        <em>Realizar Pagamento</em>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="t3" class="col s12">
+                            <div class="boleto">
+                                <div class="center-align">
+                                    <img src="img/barras.png" width="500px">
+                                    <p class="light">O pedido será confirmado apenas após a confirmação do pagamento.</p>
+                                    <p class="light"><b>Taxa:</b> R$ 1,00 (taxa aplicada para cobrir custos de gestão de risco do meio de pagamento).</p>
+                                    <p class="light">* Após clicar em <b>"Realizar pagamento"</b> você receberá o seu boleto bancário, é possível imprimi-lo e pagar pelo site do seu banco ou por uma casa lotérica.</p>
+                                    <button class="btn btn-large black-blue high-blue-text waves-effect waves-light btnCardCreditBuy">
+                                        <em>Realizar Pagamento</em>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="pacote white z-depth-2">
+                        <h6 class="upper center-align black-blue-text">
+                            <b>pacote escolhido</b>
+                        </h6>
+                        <div class="divider black-blue"></div>
+                        <h3 class="center-align light high-pink-text">
+                            <em>Ao Vivo</em>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="mdi-maps-place"></i> <b class="upper black-blue-text">local do Evento</b>
+                                <span class="grey-text text-darken-1">Rua x do evento</span>
+                            </li>
+                            <li>
+                                <i class="mdi-action-event"></i> <b class="upper black-blue-text">Data do Evento</b>
+                                <span class="grey-text text-darken-1">27, 28 e 29 de Outubro</span>
+                            </li>
+                        </ul>
+                        <div class="center-align">
+                            <a class="btn btn-large black-blue high-blue-text waves-effect waves-light">
+                                <em>R$ 180,00</em>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mContato">
+        <div class="container">
+            <h1 class="high-pink-text light center-align">
+                <em>Fale Conosco</em>
+            </h1>
+            <div class="row nm">
+                <form class="col l6 offset-l3 m12 s12" action="contato" method="post" id="forms">
+                    <div class="input-field">
+                        <input id="nomeContato" name="nomeContato" type="text" class="validate" placeholder="Nome" required/>
+                    </div>
+                    <div class="input-field">
+                        <input id="emailContato" name="emailContato" type="email" class="validate" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <input id="assuntoContato" name="assuntoContato" type="text" class="validate" placeholder="Assunto" required/>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="mensagemContato" name="mensagemContato" class="materialize-textarea" placeholder="Mensagem" required></textarea>
+                    </div>
+                    <div class="center-align">
+                        <button class="btn btn-large black-blue high-blue-text" type="submit" name="action">
+                            <em>Enviar</em>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer black-blue nm">
+    	<div class="container">
+            <ul>
+                <li>
+                    <a href="index.html" class="high-pink-text upper">
+                        <em>Início</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mDestaques" class="high-pink-text upper scrollto">
+                        <em>Palestrantes</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mVantagens" class="high-pink-text upper scrollto">
+                        <em>Vantagens</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mRecursos" class="high-pink-text upper scrollto">
+                        <em>Recursos</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mPlanos" class="high-pink-text upper scrollto">
+                        <em>Planos</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mContato" class="high-pink-text upper scrollto">
+                        <em>Contato</em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <div class="container white-text">
+               <strong>© 2016 Todos os direitos reservados</strong>
+                <a class="white-text right" href="#!"><strong>www.marttv.com.br</strong></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/jcarousellite.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/theme-scripts.js"></script>
+
+
+</html>

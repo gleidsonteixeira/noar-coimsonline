@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Meu Canal</title>
+
+<link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+<link href="css/extras.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+</head>
+
+<body>
+    <div id="mMenu" class="black-blue">
+    	<div class="container right-align">
+        	<a href="index.html">
+        		<img src="img/marttv-logo3.png" class="responsive-img" />
+            </a>
+            <ul class="hide-on-med-and-down">
+                <li>
+                    <a href="index.html" class="high-pink-text upper">
+                        <em>Início</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mDestaques" class="high-pink-text upper scrollto">
+                        <em>Palestrantes</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mVantagens" class="high-pink-text upper scrollto">
+                        <em>Vantagens</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mRecursos" class="high-pink-text upper scrollto">
+                        <em>Recursos</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mPlanos" class="high-pink-text upper scrollto">
+                        <em>Planos</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="mContato" class="high-pink-text upper">
+                        <em>Contato</em>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only" style="padding-right:12px;">
+            	<i class="mdi-navigation-menu small cyan-text text-accent-2"></i>
+            </a>
+            <ul id="slide-out" class="side-nav">
+            	<li>
+                    <a href="index.html" class="dark-blue-text upper">
+                        <i class="mdi-action-home left"></i> Início
+                    </a>
+                </li>
+                <li>
+                    <a href="#mDestaques" class="dark-blue-text upper scrollto">
+                        <i class="mdi-action-info left"></i> Palestrantes
+                    </a>
+                </li>
+                <li>
+                    <a href="#mVantagens" class="dark-blue-text upper scrollto">
+                        <i class="mdi-action-trending-up left"></i> Vantagens
+                    </a>
+                </li>
+                <li>
+                    <a href="#mRecursos" class="dark-blue-text upper scrollto">
+                        <i class="mdi-action-settings left"></i> Recursos
+                    </a>
+                </li>
+                <li>
+                    <a href="#mPlanos" class="dark-blue-text upper scrollto">
+                        <i class="mdi-editor-attach-money left"></i> Planos
+                    </a>
+                </li>
+            	<li>
+                    <a href="#mContato" class="dark-blue-text upper scrollto">
+                        <i class="mdi-content-mail left"></i> Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="mVenda" class="blue-grey lighten-5">
+        <div class="container">
+            <div class="row nm">
+                <div class="col l9">
+                    <div class="etapas black-blue z-depth-1">
+                        <div class="indicator high-pink"></div>
+                        <ul class="nm">
+                            <li>
+                                <span class="active">1</span>
+                                <em class="upper">Dados Pessoais</em>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <em class="upper">Pagamento</em>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <em class="upper">Confirmação</em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center-align" style="margin:20px 0px;">
+                        <button class="btn btn-large high-pink white-text">
+                            <em>usar facebook</em>
+                        </button>
+                    </div>
+                    <form class="row" id="cadUser" method="post" action="http://eventoaovivo.com/cadUser">
+                        <div class="input-field col s6">
+                            <label for="nome">
+                                <em class="upper high-pink-text">seu nome</em>
+                            </label>
+                            <input id="nome" name="nome" type="text" class="validate white" placeholder="digite seu nome"/>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="email">
+                                <em class="upper high-pink-text">seu email</em>
+                            </label>
+                            <input id="email" name="email" type="email" class="validate white" placeholder="digite seu email"/>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="cpf">
+                                <em class="upper high-pink-text">seu cpf</em>
+                            </label>
+                            <input id="cpf" type="text" name="cpf" class="validate white" placeholder="digite seu cpf"/>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="fone">
+                                <em class="upper high-pink-text">seu telefone</em>
+                            </label>
+                            <input id="fone" type="text" name="fone" class="validate white" placeholder="digite seu telefone"/>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="niver">
+                                <em class="upper high-pink-text">data de nascimento</em>
+                            </label>
+                            <input id="niver" type="text" name="niver" class="validate white" placeholder="digite sua data de nascimento ex dd/mm/yyyy"/>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="senha">
+                                <em class="upper high-pink-text">sua senha</em>
+                            </label>
+                            <input id="senha" type="password" name="senha" class="validate white" placeholder="digite sua senha"/>
+                        </div>
+                        <input type="hidden" id="id_face" name="id_face" value=""/>
+                        <input type="hidden" id="foto" name="foto" value=""/>
+                        <div class="center-align">
+                            <a href="venda2.html" class="btn btn-large black-blue high-blue-text waves-effect waves-light" id="nextEtapa2">
+                                <em>Próximo Passo</em>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col l3">
+                    <div class="pacote white z-depth-2">
+                        <h6 class="upper center-align black-blue-text">
+                            <b>pacote escolhido</b>
+                        </h6>
+                        <div class="divider black-blue"></div>
+                        <h3 class="center-align light high-pink-text">
+                            <em>Ao Vivo</em>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="mdi-maps-place"></i> <b class="upper black-blue-text">local do Evento</b>
+                                <span class="grey-text text-darken-1">Rua x do evento</span>
+                            </li>
+                            <li>
+                                <i class="mdi-action-event"></i> <b class="upper black-blue-text">Data do Evento</b>
+                                <span class="grey-text text-darken-1">27, 28 e 29 de Outubro</span>
+                            </li>
+                        </ul>
+                        <div class="center-align">
+                            <a class="btn btn-large black-blue high-blue-text waves-effect waves-light">
+                                <em>R$ 180,00</em>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mContato">
+        <div class="container">
+            <h1 class="high-pink-text light center-align">
+                <em>Fale Conosco</em>
+            </h1>
+            <div class="row nm">
+                <form class="col l6 offset-l3 m12 s12" action="contato" method="post" id="forms">
+                    <div class="input-field">
+                        <input id="nomeContato" name="nomeContato" type="text" class="validate" placeholder="Nome" required/>
+                    </div>
+                    <div class="input-field">
+                        <input id="emailContato" name="emailContato" type="email" class="validate" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <input id="assuntoContato" name="assuntoContato" type="text" class="validate" placeholder="Assunto" required/>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="mensagemContato" name="mensagemContato" class="materialize-textarea" placeholder="Mensagem" required></textarea>
+                    </div>
+                    <div class="center-align">
+                        <button class="btn btn-large black-blue high-blue-text" type="submit" name="action">
+                            <em>Enviar</em>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer black-blue nm">
+    	<div class="container">
+            <ul>
+                <li>
+                    <a href="index.html" class="high-pink-text upper">
+                        <em>Início</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mDestaques" class="high-pink-text upper scrollto">
+                        <em>Palestrantes</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mVantagens" class="high-pink-text upper scrollto">
+                        <em>Vantagens</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mRecursos" class="high-pink-text upper scrollto">
+                        <em>Recursos</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mPlanos" class="high-pink-text upper scrollto">
+                        <em>Planos</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mContato" class="high-pink-text upper scrollto">
+                        <em>Contato</em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <div class="container white-text">
+               <strong>© 2016 Todos os direitos reservados</strong>
+                <a class="white-text right" href="#!"><strong>www.marttv.com.br</strong></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/jcarousellite.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/theme-scripts.js"></script>
+
+
+</html>
